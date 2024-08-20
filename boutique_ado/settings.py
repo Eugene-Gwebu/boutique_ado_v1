@@ -29,9 +29,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True 
 
-ALLOWED_HOSTS = ['boutique-ado-gwebu-a7cbc13af3b9.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['boutique-ado-gwebu-a7cbc13af3b9.herokuapp.com', '8000-eugenegwebu-boutiqueado-keh80j7beiu.ws-eu115.gitpod.io']
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-eugenegwebu-boutiqueado-keh80j7beiu.ws-eu115.gitpod.io']
 
 
 # Application definition
